@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\xxxhe\\OneDrive\\Documentos\\programacao\\c-sharp\\maio\\ImagensDinamicas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E226FF1-CF6C-4FBB-87FD-BC0A07BA0BEB}|ImagensDinamicas\\ImagensDinamicas.csproj|c:\\users\\xxxhe\\onedrive\\documentos\\programacao\\c-sharp\\maio\\imagensdinamicas\\imagensdinamicas\\frmjogodados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7E226FF1-CF6C-4FBB-87FD-BC0A07BA0BEB}|ImagensDinamicas\\ImagensDinamicas.csproj|solutionrelative:imagensdinamicas\\frmjogodados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E226FF1-CF6C-4FBB-87FD-BC0A07BA0BEB}|ImagensDinamicas\\ImagensDinamicas.csproj|c:\\users\\xxxhe\\onedrive\\documentos\\programacao\\c-sharp\\maio\\imagensdinamicas\\imagensdinamicas\\frmjogodados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E226FF1-CF6C-4FBB-87FD-BC0A07BA0BEB}|ImagensDinamicas\\ImagensDinamicas.csproj|solutionrelative:imagensdinamicas\\frmjogodados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E226FF1-CF6C-4FBB-87FD-BC0A07BA0BEB}|ImagensDinamicas\\ImagensDinamicas.csproj|c:\\users\\xxxhe\\onedrive\\documentos\\programacao\\c-sharp\\maio\\imagensdinamicas\\imagensdinamicas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E226FF1-CF6C-4FBB-87FD-BC0A07BA0BEB}|ImagensDinamicas\\ImagensDinamicas.csproj|solutionrelative:imagensdinamicas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\xxxhe\\OneDrive\\Documentos\\programacao\\c-sharp\\maio\\ImagensDinamicas\\ImagensDinamicas\\Program.cs",
+              "RelativeDocumentMoniker": "ImagensDinamicas\\Program.cs",
+              "ToolTip": "C:\\Users\\xxxhe\\OneDrive\\Documentos\\programacao\\c-sharp\\maio\\ImagensDinamicas\\ImagensDinamicas\\Program.cs",
+              "RelativeToolTip": "ImagensDinamicas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:24:55.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmJogoDados.cs",
+              "DocumentMoniker": "C:\\Users\\xxxhe\\OneDrive\\Documentos\\programacao\\c-sharp\\maio\\ImagensDinamicas\\ImagensDinamicas\\frmJogoDados.cs",
+              "RelativeDocumentMoniker": "ImagensDinamicas\\frmJogoDados.cs",
+              "ToolTip": "C:\\Users\\xxxhe\\OneDrive\\Documentos\\programacao\\c-sharp\\maio\\ImagensDinamicas\\ImagensDinamicas\\frmJogoDados.cs",
+              "RelativeToolTip": "ImagensDinamicas\\frmJogoDados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:24:49.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmJogoDados.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\xxxhe\\OneDrive\\Documentos\\programacao\\c-sharp\\maio\\ImagensDinamicas\\ImagensDinamicas\\frmJogoDados.cs",
+              "RelativeDocumentMoniker": "ImagensDinamicas\\frmJogoDados.cs",
+              "ToolTip": "C:\\Users\\xxxhe\\OneDrive\\Documentos\\programacao\\c-sharp\\maio\\ImagensDinamicas\\ImagensDinamicas\\frmJogoDados.cs [Design]",
+              "RelativeToolTip": "ImagensDinamicas\\frmJogoDados.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:24:45.508Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

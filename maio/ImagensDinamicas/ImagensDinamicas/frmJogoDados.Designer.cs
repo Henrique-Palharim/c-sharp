@@ -45,8 +45,9 @@
             // 
             // picDado1
             // 
+            this.picDado1.BackColor = System.Drawing.Color.White;
             this.picDado1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picDado1.Location = new System.Drawing.Point(61, 210);
+            this.picDado1.Location = new System.Drawing.Point(55, 210);
             this.picDado1.Margin = new System.Windows.Forms.Padding(6);
             this.picDado1.Name = "picDado1";
             this.picDado1.Size = new System.Drawing.Size(200, 200);
@@ -57,7 +58,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(61, 164);
+            this.label1.Location = new System.Drawing.Point(55, 164);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 30);
@@ -69,7 +70,7 @@
             // 
             this.lblPlacar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lblPlacar1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPlacar1.Location = new System.Drawing.Point(127, 435);
+            this.lblPlacar1.Location = new System.Drawing.Point(121, 435);
             this.lblPlacar1.Name = "lblPlacar1";
             this.lblPlacar1.Size = new System.Drawing.Size(65, 65);
             this.lblPlacar1.TabIndex = 2;
@@ -79,7 +80,7 @@
             // 
             this.lblPlacar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lblPlacar2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPlacar2.Location = new System.Drawing.Point(401, 435);
+            this.lblPlacar2.Location = new System.Drawing.Point(395, 435);
             this.lblPlacar2.Name = "lblPlacar2";
             this.lblPlacar2.Size = new System.Drawing.Size(65, 65);
             this.lblPlacar2.TabIndex = 5;
@@ -88,7 +89,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(335, 164);
+            this.label4.Location = new System.Drawing.Point(329, 164);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(200, 30);
@@ -98,8 +99,9 @@
             // 
             // picDado2
             // 
+            this.picDado2.BackColor = System.Drawing.Color.White;
             this.picDado2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picDado2.Location = new System.Drawing.Point(335, 210);
+            this.picDado2.Location = new System.Drawing.Point(329, 210);
             this.picDado2.Margin = new System.Windows.Forms.Padding(6);
             this.picDado2.Name = "picDado2";
             this.picDado2.Size = new System.Drawing.Size(200, 200);
@@ -111,7 +113,7 @@
             // 
             this.btReiniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btReiniciar.ForeColor = System.Drawing.Color.Black;
-            this.btReiniciar.Location = new System.Drawing.Point(127, 681);
+            this.btReiniciar.Location = new System.Drawing.Point(121, 681);
             this.btReiniciar.Name = "btReiniciar";
             this.btReiniciar.Size = new System.Drawing.Size(102, 49);
             this.btReiniciar.TabIndex = 6;
@@ -123,7 +125,7 @@
             // 
             this.btJogar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btJogar.ForeColor = System.Drawing.Color.Black;
-            this.btJogar.Location = new System.Drawing.Point(244, 681);
+            this.btJogar.Location = new System.Drawing.Point(238, 681);
             this.btJogar.Name = "btJogar";
             this.btJogar.Size = new System.Drawing.Size(102, 49);
             this.btJogar.TabIndex = 7;
@@ -135,7 +137,7 @@
             // 
             this.btSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btSair.ForeColor = System.Drawing.Color.Black;
-            this.btSair.Location = new System.Drawing.Point(364, 681);
+            this.btSair.Location = new System.Drawing.Point(358, 681);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(102, 49);
             this.btSair.TabIndex = 8;
@@ -146,7 +148,7 @@
             // lblMostrarGanhador
             // 
             this.lblMostrarGanhador.BackColor = System.Drawing.Color.White;
-            this.lblMostrarGanhador.Location = new System.Drawing.Point(123, 572);
+            this.lblMostrarGanhador.Location = new System.Drawing.Point(117, 572);
             this.lblMostrarGanhador.Name = "lblMostrarGanhador";
             this.lblMostrarGanhador.Size = new System.Drawing.Size(343, 33);
             this.lblMostrarGanhador.TabIndex = 9;
@@ -158,7 +160,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(119, 60);
+            this.label2.Location = new System.Drawing.Point(113, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(355, 44);
             this.label2.TabIndex = 10;
@@ -169,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(594, 762);
+            this.ClientSize = new System.Drawing.Size(594, 761);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblMostrarGanhador);
             this.Controls.Add(this.btSair);

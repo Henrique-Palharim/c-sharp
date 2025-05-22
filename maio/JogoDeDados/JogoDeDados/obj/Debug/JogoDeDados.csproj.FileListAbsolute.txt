@@ -1,0 +1,10 @@
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\bin\Debug\JogoDeDados.exe.config
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\bin\Debug\JogoDeDados.exe
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\bin\Debug\JogoDeDados.pdb
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\obj\Debug\JogoDeDados.csproj.AssemblyReference.cache
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\obj\Debug\JogoDeDados.frmJogoDados.resources
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\obj\Debug\JogoDeDados.Properties.Resources.resources
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\obj\Debug\JogoDeDados.csproj.GenerateResource.cache
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\obj\Debug\JogoDeDados.csproj.CoreCompileInputs.cache
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\obj\Debug\JogoDeDados.exe
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\maio\JogoDeDados\JogoDeDados\obj\Debug\JogoDeDados.pdb
