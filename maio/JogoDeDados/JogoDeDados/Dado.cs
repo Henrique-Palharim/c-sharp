@@ -63,5 +63,7 @@ namespace JogoDeDados
         {
             return sorteio.Next(1, 7);
         }
+
+
     }
 }

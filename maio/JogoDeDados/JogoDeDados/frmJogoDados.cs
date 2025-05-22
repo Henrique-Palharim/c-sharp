@@ -14,6 +14,9 @@ namespace JogoDeDados
     public partial class frmJogoDados : Form
     {
         private Dado jogo;
+        private int animacoesRestantes;
+        private int resultadoDado1;
+        private int resultadoDado2;
 
         public frmJogoDados()
         {
@@ -51,12 +54,10 @@ namespace JogoDeDados
                 return;
             }
 
-            var (num1, num2) = jogo.Jogar();
-
-            AtualizaImagem(picDado1, num1);
-            AtualizaImagem(picDado2, num2);
-
-            AtualizarPlacar(num1, num2);
+            // Inicia a simulação de rolagem do dado
+            animacoesRestantes = 3;
+            timerAtualizaDado.Start();
+            btJogar.Enabled = false; // desativa até terminar a rolagem
         }
 
         private void AtualizaImagem(PictureBox pic, int numero)
@@ -77,5 +78,44 @@ namespace JogoDeDados
             else
                 lblMostrarGanhador.Text = $"Rodada {jogo.RodadaAtual - 1}: Empate";
         }
+
+        private void timerAtualizaDado_Tick_1(object sender, EventArgs e)
+        {
+            if (animacoesRestantes > 0)
+            {
+                // mostra números aleatórios como se o dado estivesse rolando
+                int temp1 = new Random().Next(1, 7);
+                int temp2 = new Random().Next(1, 7);
+
+                AtualizaImagem(picDado1, temp1);
+                AtualizaImagem(picDado2, temp2);
+
+                animacoesRestantes--;
+            }
+            else
+            {
+                timerAtualizaDado.Stop();
+
+                // agora faz a jogada real
+                (resultadoDado1, resultadoDado2) = jogo.Jogar();
+
+                AtualizaImagem(picDado1, resultadoDado1);
+                AtualizaImagem(picDado2, resultadoDado2);
+
+                AtualizarPlacar(resultadoDado1, resultadoDado2);
+
+                if (jogo.JogoFinalizado())
+                {
+                    MessageBox.Show(jogo.ResultadoFinal(), "Jogo encerrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btJogar.Enabled = false;
+                }
+                else
+                {
+                    btJogar.Enabled = true;
+                }
+            }
+        }
+
+
     }
 }
