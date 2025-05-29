@@ -29,5 +29,27 @@ namespace ImagensDinamicas
                 picFoto.Image = null;
             }
         }
+
+        private void btLimpar_Click(object sender, EventArgs e)
+        {
+            picFoto.Image = null;
+        }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void frmCarregaFoto_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja realmente sair ?",
+                                                     "Sair",
+                                                     MessageBoxButtons.YesNo,
+                                                     MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

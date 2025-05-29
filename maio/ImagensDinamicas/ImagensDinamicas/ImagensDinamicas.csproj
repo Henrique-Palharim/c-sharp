@@ -52,19 +52,37 @@
     <Compile Include="frmCarregaFoto.Designer.cs">
       <DependentUpon>frmCarregaFoto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmJogadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJogadores.Designer.cs">
+      <DependentUpon>frmJogadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmJogoDados.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmJogoDados.Designer.cs">
       <DependentUpon>frmJogoDados.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCarregaFoto.resx">
       <DependentUpon>frmCarregaFoto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmJogadores.resx">
+      <DependentUpon>frmJogadores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmJogoDados.resx">
       <DependentUpon>frmJogoDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

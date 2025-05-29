@@ -46,14 +46,19 @@ namespace ImagensDinamicas
 
         private void btSair_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void frmJogoDados_FormClosing(object sender, FormClosingEventArgs e)
+        {
             DialogResult resultado = MessageBox.Show("Deseja realmente sair ?",
                                                      "Sair",
                                                      MessageBoxButtons.YesNo,
                                                      MessageBoxIcon.Question);
 
-            if (resultado == DialogResult.Yes)
+            if (resultado == DialogResult.No)
             {
-                Application.Exit();
+                e.Cancel = true;
             }
         }
 
@@ -138,6 +143,8 @@ namespace ImagensDinamicas
 
             contRodada++;
         }
+
+
 
 
     }

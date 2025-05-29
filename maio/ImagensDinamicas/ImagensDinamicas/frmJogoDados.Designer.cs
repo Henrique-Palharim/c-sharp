@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.picDado1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPlacar1 = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.btSair = new System.Windows.Forms.Button();
             this.lblMostrarGanhador = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.timerAtualizaDado = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picDado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDado2)).BeginInit();
             this.SuspendLayout();
@@ -166,6 +168,10 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "DADOS DA SORTE";
             // 
+            // timerAtualizaDado
+            // 
+            this.timerAtualizaDado.Interval = 250;
+            // 
             // frmJogoDados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -187,6 +193,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmJogoDados";
             this.Text = "Jogo de Dados";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmJogoDados_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.picDado1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDado2)).EndInit();
             this.ResumeLayout(false);
@@ -207,5 +214,6 @@
         private System.Windows.Forms.Button btSair;
         private System.Windows.Forms.Label lblMostrarGanhador;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timerAtualizaDado;
     }
 }
