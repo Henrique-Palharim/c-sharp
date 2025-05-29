@@ -34,9 +34,11 @@ namespace ImagensDinamicas
             nomeJogador1 = txtJogador1.Text.Trim();
             nomeJogador2 = txtJogador2.Text.Trim();
 
-            frmJogoDados dados = new frmJogoDados();
-            dados.Show();
-            
+            this.Hide(); // Oculta o formulário de jogadores
+            frmJogoDados dados = new frmJogoDados(nomeJogador1, nomeJogador2);
+            dados.ShowDialog();
+            this.Close(); // Fecha este formulário depois do jogo
+
         }
     }
 }
