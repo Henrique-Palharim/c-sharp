@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ImagensDinamicas.frmJogoDados;
+
+/*
+    Henrique Dornelas
+    Inf - Noturno
+    N° - 09
+*/
 
 namespace ImagensDinamicas
 {
@@ -17,61 +18,89 @@ namespace ImagensDinamicas
         {
             InitializeComponent();
 
-            string caminhoImagemDados = Path.Combine(Application.StartupPath, "imagens", $"menu-dados.jpg");
-            picDados.Image = Image.FromFile(caminhoImagemDados);
+            // carregar imagens no menu
+            string caminhoImagemDados = Path.Combine(Application.StartupPath, "imagens", "menu-dados.jpg");
+            if (File.Exists(caminhoImagemDados))
+                picDados.Image = Image.FromFile(caminhoImagemDados);
 
-            string caminhoImagemFoto = Path.Combine(Application.StartupPath, "imagens", $"menu-foto.jpeg");
-            picFoto.Image = Image.FromFile(caminhoImagemFoto);
+            string caminhoImagemFoto = Path.Combine(Application.StartupPath, "imagens", "menu-foto.jpeg");
+            if (File.Exists(caminhoImagemFoto))
+                picFoto.Image = Image.FromFile(caminhoImagemFoto);
+        }
+
+        private bool jogoJaExecutado = false;
+        // controla a abertura do jogo, abrindo o perfil só na primeira vez
+        private void AbrirJogo()
+        {
+            if (jogoJaExecutado)
+                return;
+
+            if (!PerfilJogadores.PerfilDefinido)
+            {
+                using (frmJogadores jogadores = new frmJogadores())
+                {
+                    var resultado = jogadores.ShowDialog();
+                    if (resultado != DialogResult.OK)
+                        return;
+                }
+            }
+
+            if (PerfilJogadores.PerfilDefinido)
+            {
+                frmPlacar placar = new frmPlacar();
+                frmJogoDados jogo = new frmJogoDados(placar);
+                jogo.ShowDialog();
+            }
         }
 
         private void btJogoDeDados_Click(object sender, EventArgs e)
         {
-            frmCarregaFoto perfil = new frmCarregaFoto();
-            perfil.Show();
+            btJogoDeDados.Enabled = false;
+            AbrirJogo();
+            btJogoDeDados.Enabled = true;
         }
+        
         private void picDados_Click(object sender, EventArgs e)
         {
-            frmCarregaFoto perfil = new frmCarregaFoto();
-            perfil.Show();
+            AbrirJogo();
         }
 
         private void btCarregaFoto_Click(object sender, EventArgs e)
         {
-            frmCarregaFoto foto = new frmCarregaFoto();
-            foto.Show();
+            frmPlacar placar = new frmPlacar();
+            placar.Show();
         }
+        
         private void picFoto_Click(object sender, EventArgs e)
         {
-            frmCarregaFoto foto = new frmCarregaFoto();
-            foto.Show();
+            frmPlacar placar = new frmPlacar();
+            placar.Show();
         }
 
+        // sair do menu
         private void btSair_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // confirmar saída do formulário
         private void frmMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult resposta;
-
-            resposta = MessageBox.Show("Deseja Sair da Aplicação ?",
-                                       "Sair",
-                                       MessageBoxButtons.YesNo);
+            DialogResult resposta = MessageBox.Show("Deseja Sair da Aplicação ?", "Sair", MessageBoxButtons.YesNo);
 
             if (resposta == DialogResult.No)
             {
                 e.Cancel = true;
             }
-
         }
 
-        /* --------------- Efeitos --------------- */
+        /* --------------- Efeitos visuais nos controles --------------- */
 
         private void picDados_MouseEnter(object sender, EventArgs e)
         {
             picDados.Cursor = Cursors.Hand;
         }
+
         private void picDados_MouseLeave(object sender, EventArgs e)
         {
             picDados.Cursor = Cursors.Default;
@@ -81,6 +110,7 @@ namespace ImagensDinamicas
         {
             picFoto.Cursor = Cursors.Hand;
         }
+
         private void picFoto_MouseLeave(object sender, EventArgs e)
         {
             picFoto.Cursor = Cursors.Default;

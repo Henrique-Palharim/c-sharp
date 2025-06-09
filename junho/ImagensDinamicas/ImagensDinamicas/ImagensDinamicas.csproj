@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCarregaFoto.cs">
+    <Compile Include="frmPlacar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCarregaFoto.Designer.cs">
-      <DependentUpon>frmCarregaFoto.cs</DependentUpon>
+    <Compile Include="frmPlacar.Designer.cs">
+      <DependentUpon>frmPlacar.cs</DependentUpon>
     </Compile>
     <Compile Include="frmJogadores.cs">
       <SubType>Form</SubType>
@@ -70,10 +70,11 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="PerfilJogadores.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCarregaFoto.resx">
-      <DependentUpon>frmCarregaFoto.cs</DependentUpon>
+    <EmbeddedResource Include="frmPlacar.resx">
+      <DependentUpon>frmPlacar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmJogadores.resx">
       <DependentUpon>frmJogadores.cs</DependentUpon>

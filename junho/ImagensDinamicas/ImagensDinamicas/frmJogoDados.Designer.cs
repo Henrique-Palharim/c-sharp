@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.picDado1 = new System.Windows.Forms.PictureBox();
-            this.lblJogador1 = new System.Windows.Forms.Label();
+            this.lblNomeJogador1 = new System.Windows.Forms.Label();
             this.lblPlacar1 = new System.Windows.Forms.Label();
             this.lblPlacar2 = new System.Windows.Forms.Label();
-            this.lblJogador2 = new System.Windows.Forms.Label();
+            this.lblNomeJogador2 = new System.Windows.Forms.Label();
             this.picDado2 = new System.Windows.Forms.PictureBox();
             this.btReiniciar = new System.Windows.Forms.Button();
             this.btJogar = new System.Windows.Forms.Button();
@@ -55,16 +55,16 @@
             this.picDado1.TabIndex = 0;
             this.picDado1.TabStop = false;
             // 
-            // lblJogador1
+            // lblNomeJogador1
             // 
-            this.lblJogador1.BackColor = System.Drawing.Color.White;
-            this.lblJogador1.Location = new System.Drawing.Point(55, 164);
-            this.lblJogador1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblJogador1.Name = "lblJogador1";
-            this.lblJogador1.Size = new System.Drawing.Size(200, 30);
-            this.lblJogador1.TabIndex = 1;
-            this.lblJogador1.Text = "Jogador 1";
-            this.lblJogador1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNomeJogador1.BackColor = System.Drawing.Color.White;
+            this.lblNomeJogador1.Location = new System.Drawing.Point(55, 164);
+            this.lblNomeJogador1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNomeJogador1.Name = "lblNomeJogador1";
+            this.lblNomeJogador1.Size = new System.Drawing.Size(200, 30);
+            this.lblNomeJogador1.TabIndex = 1;
+            this.lblNomeJogador1.Text = "Jogador 1";
+            this.lblNomeJogador1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPlacar1
             // 
@@ -86,16 +86,16 @@
             this.lblPlacar2.TabIndex = 5;
             this.lblPlacar2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblJogador2
+            // lblNomeJogador2
             // 
-            this.lblJogador2.BackColor = System.Drawing.Color.White;
-            this.lblJogador2.Location = new System.Drawing.Point(329, 164);
-            this.lblJogador2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblJogador2.Name = "lblJogador2";
-            this.lblJogador2.Size = new System.Drawing.Size(200, 30);
-            this.lblJogador2.TabIndex = 4;
-            this.lblJogador2.Text = "Jogador 2";
-            this.lblJogador2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNomeJogador2.BackColor = System.Drawing.Color.White;
+            this.lblNomeJogador2.Location = new System.Drawing.Point(329, 164);
+            this.lblNomeJogador2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNomeJogador2.Name = "lblNomeJogador2";
+            this.lblNomeJogador2.Size = new System.Drawing.Size(200, 30);
+            this.lblNomeJogador2.TabIndex = 4;
+            this.lblNomeJogador2.Text = "Jogador 2";
+            this.lblNomeJogador2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picDado2
             // 
@@ -178,10 +178,10 @@
             this.Controls.Add(this.btJogar);
             this.Controls.Add(this.btReiniciar);
             this.Controls.Add(this.lblPlacar2);
-            this.Controls.Add(this.lblJogador2);
+            this.Controls.Add(this.lblNomeJogador2);
             this.Controls.Add(this.picDado2);
             this.Controls.Add(this.lblPlacar1);
-            this.Controls.Add(this.lblJogador1);
+            this.Controls.Add(this.lblNomeJogador1);
             this.Controls.Add(this.picDado1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -198,10 +198,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picDado1;
-        private System.Windows.Forms.Label lblJogador1;
+        private System.Windows.Forms.Label lblNomeJogador1;
         private System.Windows.Forms.Label lblPlacar1;
         private System.Windows.Forms.Label lblPlacar2;
-        private System.Windows.Forms.Label lblJogador2;
+        private System.Windows.Forms.Label lblNomeJogador2;
         private System.Windows.Forms.PictureBox picDado2;
         private System.Windows.Forms.Button btReiniciar;
         private System.Windows.Forms.Button btJogar;

@@ -3,13 +3,22 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
+/*
+    Henrique Dornelas
+    Inf - Noturno
+    N° - 09
+*/
+
 namespace ImagensDinamicas
 {
     public partial class frmJogoDados : Form
     {
-        // Variáveis de jogo
+        // variáveis de jogo
         private string nomeJogador1;
         private string nomeJogador2;
+
+        private Image fotoJogador1;
+        private Image fotoJogador2;
 
         private int contVitoria1 = 0;
         private int contVitoria2 = 0;
@@ -17,7 +26,7 @@ namespace ImagensDinamicas
 
         private Random sorteio = new Random();
 
-        // Timers e controle de animação
+        // timers e controle de animação
         private Timer timerDado1 = new Timer();
         private Timer timerDado2 = new Timer();
 
@@ -27,21 +36,35 @@ namespace ImagensDinamicas
         private int resultadoDado1;
         private int resultadoDado2;
 
-        public frmJogoDados(string jogador1, string jogador2)
+        private frmPlacar formPlacar;
+        public frmJogoDados(frmPlacar placar)
         {
             InitializeComponent();
-            nomeJogador1 = jogador1;
-            nomeJogador2 = jogador2;
 
-            // Eventos dos timers
+            nomeJogador1 = PerfilJogadores.NomeJogador1;
+            nomeJogador2 = PerfilJogadores.NomeJogador2;
+
+            fotoJogador1 = PerfilJogadores.FotoJogador1;
+            fotoJogador2 = PerfilJogadores.FotoJogador2;
+
+            this.formPlacar = placar;
+
             timerDado1.Interval = 200;
             timerDado1.Tick += TimerDado1_Tick;
 
             timerDado2.Interval = 200;
             timerDado2.Tick += TimerDado2_Tick;
 
-            lblJogador1.Text = nomeJogador1;
-            lblJogador2 .Text = nomeJogador2;
+            lblNomeJogador1.Text = nomeJogador1;
+            lblNomeJogador2.Text = nomeJogador2;
+
+            this.Load += frmJogoDados_Load;
+        }
+
+        private void frmJogoDados_Load(object sender, EventArgs e)
+        {
+            lblNomeJogador1.Text = nomeJogador1;
+            lblNomeJogador2.Text = nomeJogador2;
         }
 
         private void btJogar_Click(object sender, EventArgs e)
@@ -53,14 +76,17 @@ namespace ImagensDinamicas
                 if (contVitoria1 > contVitoria2)
                 {
                     mensagemFinal = $"Fim de jogo! Foram 10 rodadas.\n\n{nomeJogador1} venceu com mais vitórias! 🎉🥳";
+                    formPlacar.AtualizarPlacarGeral(1);
                 }
                 else if (contVitoria2 > contVitoria1)
                 {
                     mensagemFinal = $"Fim de jogo! Foram 10 rodadas.\n\n{nomeJogador2} venceu com mais vitórias! 🎉🥳";
+                    formPlacar.AtualizarPlacarGeral(2);
                 }
                 else
                 {
                     mensagemFinal = "Fim de jogo! Foram 10 rodadas.\n\nEmpate entre os jogadores! 🎉🥳";
+                    // nenhuma alteração no placar
                 }
 
                 MessageBox.Show(mensagemFinal, "Jogo encerrado", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -61,3 +61,17 @@ C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\junho\ImagensDinamica
 C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.csproj.CoreCompileInputs.cache
 C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.exe
 C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.pdb
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\bin\Debug\ImagensDinamicas.exe.config
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\bin\Debug\ImagensDinamicas.exe
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\bin\Debug\ImagensDinamicas.pdb
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.csproj.AssemblyReference.cache
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.exe.config
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.frmJogadores.resources
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.frmJogoDados.resources
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.frmMenu.resources
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.Properties.Resources.resources
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.csproj.GenerateResource.cache
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.csproj.CoreCompileInputs.cache
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.exe
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.pdb
+C:\Users\xxxhe\OneDrive\Documentos\programacao\c-sharp\junho\ImagensDinamicas\ImagensDinamicas\obj\Debug\ImagensDinamicas.frmPlacar.resources
