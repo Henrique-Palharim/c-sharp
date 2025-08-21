@@ -38,11 +38,15 @@ namespace Banco
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro ao realizar o saque!" +
+                MessageBox.Show("Ocorreu um evento ao realizar o saque!" +
                                 "\n\nMais detalhes: " + ex.Message,
                                 "Erro ao sacar",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
+            }
+            finally
+            {
+                AtualizaSaldoLimite();
             }
             
         }
@@ -56,26 +60,6 @@ namespace Banco
         {
             conta.LimiteCredito = numLimiteCredito.Value;
             AtualizaSaldoLimite();
-        }
-
-        private void numValorDeposito_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numValorSaque_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

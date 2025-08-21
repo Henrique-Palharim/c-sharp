@@ -63,6 +63,11 @@ namespace Banco
             {
                 Saldo = Saldo - valor;
             }
+
+            if (Saldo < 0)
+            {
+                throw new Exception("Atenção: você está utilizando o limite de crédito da conta");
+            }
         }
 
         public void Depositar(decimal valor)

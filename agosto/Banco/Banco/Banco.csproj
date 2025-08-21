@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente.cs" />
     <Compile Include="Conta.cs" />
     <Compile Include="frmCaixaEletronica.cs">
       <SubType>Form</SubType>
@@ -54,7 +53,6 @@
     <Compile Include="frmCaixaEletronica.Designer.cs">
       <DependentUpon>frmCaixaEletronica.cs</DependentUpon>
     </Compile>
-    <Compile Include="Funcionario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCaixaEletronica.resx">

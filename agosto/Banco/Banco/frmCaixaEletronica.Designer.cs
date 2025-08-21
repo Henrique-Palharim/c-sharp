@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(99, 31);
+            this.label1.Location = new System.Drawing.Point(325, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 20);
@@ -61,7 +61,7 @@
             this.lblSaldo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lblSaldo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaldo.Location = new System.Drawing.Point(103, 60);
+            this.lblSaldo.Location = new System.Drawing.Point(329, 60);
             this.lblSaldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSaldo.Name = "lblSaldo";
             this.lblSaldo.Size = new System.Drawing.Size(186, 26);
@@ -79,7 +79,6 @@
             this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Valor Saque:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // numValorSaque
             // 
@@ -96,7 +95,6 @@
             this.numValorSaque.Size = new System.Drawing.Size(182, 26);
             this.numValorSaque.TabIndex = 3;
             this.numValorSaque.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numValorSaque.ValueChanged += new System.EventHandler(this.numValorSaque_ValueChanged);
             // 
             // btnSacar
             // 
@@ -125,7 +123,6 @@
             this.numValorDeposito.Size = new System.Drawing.Size(182, 26);
             this.numValorDeposito.TabIndex = 6;
             this.numValorDeposito.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numValorDeposito.ValueChanged += new System.EventHandler(this.numValorDeposito_ValueChanged);
             // 
             // label3
             // 
@@ -137,7 +134,6 @@
             this.label3.Size = new System.Drawing.Size(133, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Valor Depósito;";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btDepositar
             // 
@@ -155,7 +151,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(336, 31);
+            this.label4.Location = new System.Drawing.Point(106, 31);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 20);
@@ -166,7 +162,7 @@
             // 
             this.numLimiteCredito.DecimalPlaces = 2;
             this.numLimiteCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numLimiteCredito.Location = new System.Drawing.Point(340, 60);
+            this.numLimiteCredito.Location = new System.Drawing.Point(110, 60);
             this.numLimiteCredito.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numLimiteCredito.Maximum = new decimal(new int[] {
             1241513983,
