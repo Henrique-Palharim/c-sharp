@@ -16,7 +16,7 @@ namespace Banco
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCaixaEletronica());
+            Application.Run(new frmMenu());
         }
     }
 }

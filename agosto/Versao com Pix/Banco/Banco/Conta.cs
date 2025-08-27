@@ -52,27 +52,24 @@ namespace Banco
         }
 
         // Criação dos métodos da Classe
+        public decimal SaldoDisponivel => Saldo + LimiteCredito;
+
         public void Sacar(decimal valor)
         {
-            contadorConta++;
-            if (Saldo+LimiteCredito < valor)
-            {
-                throw new Exception("Saldo e Limtie insuficientes para realizar o saque");
-            }
-            else
-            {
-                Saldo = Saldo - valor;
-            }
+            if (valor <= 0)
+                throw new Exception("O valor do saque deve ser maior que zero.");
 
-            if (Saldo < 0)
-            {
-                throw new Exception("Atenção: você está utilizando o limite de crédito da conta");
-            }
+            if (valor > SaldoDisponivel)
+                throw new Exception("Saldo e limite insuficientes para realizar o saque.");
+
+            Saldo -= valor; // pode ficar negativo (uso do limite), e tudo bem
         }
 
         public void Depositar(decimal valor)
-        { 
-            Saldo = Saldo + valor;
+        {
+            if (valor <= 0)
+                throw new Exception("O valor do depósito deve ser maior que zero.");
+            Saldo += valor;
         }
 
     }

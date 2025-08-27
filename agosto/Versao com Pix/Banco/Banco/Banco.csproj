@@ -47,17 +47,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conta.cs" />
-    <Compile Include="frmCaixaEletronica.cs">
+    <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCaixaEletronica.Designer.cs">
-      <DependentUpon>frmCaixaEletronica.cs</DependentUpon>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPix.Designer.cs">
+      <DependentUpon>frmPix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferencia.Designer.cs">
+      <DependentUpon>frmTransferencia.cs</DependentUpon>
     </Compile>
     <Compile Include="Lancamento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCaixaEletronica.resx">
-      <DependentUpon>frmCaixaEletronica.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPix.resx">
+      <DependentUpon>frmPix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferencia.resx">
+      <DependentUpon>frmTransferencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,6 +85,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -83,6 +102,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\pix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\transferencia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\dinheiro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\dinheiro %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
