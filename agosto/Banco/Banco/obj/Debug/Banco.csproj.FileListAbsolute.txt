@@ -18,3 +18,14 @@ C:\Users\ra2457076\Downloads\Banco\Banco\obj\Debug\Banco.csproj.GenerateResource
 C:\Users\ra2457076\Downloads\Banco\Banco\obj\Debug\Banco.csproj.CoreCompileInputs.cache
 C:\Users\ra2457076\Downloads\Banco\Banco\obj\Debug\Banco.exe
 C:\Users\ra2457076\Downloads\Banco\Banco\obj\Debug\Banco.pdb
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\bin\Debug\Banco.exe.config
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\bin\Debug\Banco.exe
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\bin\Debug\Banco.pdb
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\obj\Debug\Banco.csproj.AssemblyReference.cache
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\obj\Debug\Banco.exe.config
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\obj\Debug\Banco.frmCaixaEletronica.resources
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\obj\Debug\Banco.Properties.Resources.resources
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\obj\Debug\Banco.csproj.GenerateResource.cache
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\obj\Debug\Banco.csproj.CoreCompileInputs.cache
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\obj\Debug\Banco.exe
+C:\Users\henri\OneDrive\Documentos\Programacao\C#\agosto\Banco\Banco\obj\Debug\Banco.pdb

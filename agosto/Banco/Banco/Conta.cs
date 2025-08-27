@@ -9,14 +9,13 @@ namespace Banco
 {
     public class Conta
     {
-        // Definição dos atributos internos da Classe
+        // Definição dos atributos da Classe
         private Int32 numero;
         private decimal limiteCredito;
         private decimal saldo;
         private DateTime dataAbertura;
         private decimal contadorConta = 0;
 
-        // Criação das propriedades da Classe referentes aos atributos internos
         public Int32 Numero
         {
             get { return numero; }
@@ -54,25 +53,23 @@ namespace Banco
         // Criação dos métodos da Classe
         public void Sacar(decimal valor)
         {
-            contadorConta++;
-            if (Saldo+LimiteCredito < valor)
+            if (valor <= 0)
+                throw new Exception("O valor do saque deve ser maior que zero.");
+
+            if (Saldo + LimiteCredito < valor)
             {
-                throw new Exception("Saldo e Limtie insuficientes para realizar o saque");
-            }
-            else
-            {
-                Saldo = Saldo - valor;
+                throw new Exception("Saldo e limite insuficientes para realizar o saque.");
             }
 
-            if (Saldo < 0)
-            {
-                throw new Exception("Atenção: você está utilizando o limite de crédito da conta");
-            }
+            Saldo -= valor;
         }
 
         public void Depositar(decimal valor)
-        { 
-            Saldo = Saldo + valor;
+        {
+            if (valor <= 0)
+                throw new Exception("O valor do depósito deve ser maior que zero.");
+
+            Saldo += valor;
         }
 
     }

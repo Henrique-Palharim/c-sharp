@@ -30,30 +30,51 @@ namespace Banco
 
         private void btnSacar_Click(object sender, EventArgs e)
         {
+            decimal valor = numValorSaque.Value;
+
+            if (valor <= 0)
+            {
+                MessageBox.Show("Digite um valor maior que zero para saque.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
-                conta.Sacar(numValorSaque.Value);
+                conta.Sacar(valor);
                 AtualizaSaldoLimite();
-                MessageBox.Show("Saque realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (conta.Saldo < 0)
+                {
+                    MessageBox.Show("Saque realizado, mas você está usando seu limite de crédito!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("Saque realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um evento ao realizar o saque!" +
-                                "\n\nMais detalhes: " + ex.Message,
+                MessageBox.Show("Ocorreu um erro ao realizar o saque!\n\nDetalhes: " + ex.Message,
                                 "Erro ao sacar",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
             }
-            finally
-            {
-                AtualizaSaldoLimite();
-            }
-            
+
         }
 
         private void btDepositar_Click(object sender, EventArgs e)
         {
-            conta.Depositar(numValorDeposito.Value);
+            decimal valor = numValorDeposito.Value;
+
+            if (valor <= 0)
+            {
+                MessageBox.Show("Digite um valor maior que zero para depósito.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            conta.Depositar(valor);
+            AtualizaSaldoLimite();
+            MessageBox.Show("Depósito realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void numLimiteCredito_Validating(object sender, CancelEventArgs e)
@@ -61,5 +82,6 @@ namespace Banco
             conta.LimiteCredito = numLimiteCredito.Value;
             AtualizaSaldoLimite();
         }
+
     }
 }
