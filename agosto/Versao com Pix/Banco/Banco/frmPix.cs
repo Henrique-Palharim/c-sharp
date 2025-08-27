@@ -24,14 +24,14 @@ namespace Banco
 
         private void btnTransferir_Click(object sender, EventArgs e)
         {
-            // Validação básica dos campos
+            // validação dos campos
             if (string.IsNullOrWhiteSpace(txtPagador.Text) ||
                 string.IsNullOrWhiteSpace(txtRemetente.Text) ||
                 string.IsNullOrWhiteSpace(txtContaPagador.Text) ||
                 string.IsNullOrWhiteSpace(txtContaRemetente.Text) ||
                 numValorTransferencia.Value <= 0)
             {
-                MessageBox.Show("Preencha todos os campos corretamente e informe um valor maior que zero.");
+                MessageBox.Show("Preencha todos os campos corretamente e informe um valor maior que zero.\n(A mensagem é opcional)");
                 return;
             }
 
@@ -44,9 +44,11 @@ namespace Banco
                 int contaRemetente = int.Parse(txtContaRemetente.Text);
                 decimal valor = numValorTransferencia.Value;
                 string mensagem = string.IsNullOrWhiteSpace(txtMensagem.Text) ? "Sem mensagem" : txtMensagem.Text.Trim();
+                string formaPagamento = comboBoxFormaPagamento.SelectedItem?.ToString() ?? "Não informado";
+                string metodoPagamento = comboBoxMetodoPagamento.SelectedItem?.ToString() ?? "Não informado";
 
-                // Apenas registra o lançamento, sem mexer no saldo
-                Lancamento lancamento = new Lancamento(pagador, remetente, contaPagador, contaRemetente, valor, mensagem);
+                // apenas registra o lançamento, sem alterar o saldo
+                Lancamento lancamento = new Lancamento(pagador, remetente, contaPagador, contaRemetente, valor, mensagem, metodoPagamento,formaPagamento);
                 historicoLancamentos.Add(lancamento);
 
                 MessageBox.Show("Pix realizado com sucesso!\n" + lancamento.ToString());
@@ -86,6 +88,12 @@ namespace Banco
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmPix_Load(object sender, EventArgs e)
+        {
+            comboBoxMetodoPagamento.SelectedIndex = 0;
+            comboBoxFormaPagamento.SelectedIndex = 0;
         }
     }
 }

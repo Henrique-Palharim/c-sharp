@@ -13,7 +13,7 @@ namespace Banco
     public partial class frmTransferencia : Form
     {
         Conta conta = new Conta();
-        bool avisouLimite = false; // controla aviso único
+        bool avisouLimite = false;
 
         public frmTransferencia()
         {
@@ -29,7 +29,6 @@ namespace Banco
             lblSaldo.Text = conta.Saldo.ToString("C");
             lblSaldoLimite.Text = conta.SaldoDisponivel.ToString("C");
 
-            // Opcional: feedback visual
             lblSaldo.ForeColor = (conta.Saldo < 0) ? Color.Firebrick : SystemColors.ControlText;
         }
 
@@ -48,15 +47,14 @@ namespace Banco
             }
             finally
             {
-                // garante que a UI sempre reflita o estado atual, mesmo se der erro
+                // garante que sempre mostre o saldo atual, mesmo se der erro
                 AtualizaSaldoLimite();
             }
 
-            // Aviso só quando CRUZAR para o limite (de não-negativo -> negativo)
+            // aviso só quando começar a usar o limite
             if (!avisouLimite && saldoAntes >= 0 && conta.Saldo < 0)
             {
                 avisouLimite = true;
-                // Se não quiser popup, remova a MessageBox e deixe só a cor da label
                 MessageBox.Show("Atenção: você está utilizando o limite de crédito!",
                                 "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -71,7 +69,7 @@ namespace Banco
             try
             {
                 conta.Depositar(numValorDeposito.Value);
-                // Se voltou para saldo >= 0, libera avisar de novo no futuro
+                // volta a avisar quando saldo >= 0
                 if (conta.Saldo >= 0) avisouLimite = false;
             }
             catch (Exception ex)
@@ -92,7 +90,7 @@ namespace Banco
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            this.Close(); // Fecha a tela atual
+            this.Close(); // fecha a tela atual
         }
     }
 }

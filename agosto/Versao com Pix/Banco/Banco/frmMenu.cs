@@ -21,7 +21,7 @@ namespace Banco
         {
             this.Hide();
             frmTransferencia formTransf = new frmTransferencia();
-            formTransf.ShowDialog(); // abre modal
+            formTransf.ShowDialog();
             this.Show();
         }
 

@@ -9,14 +9,14 @@ namespace Banco
 {
     public class Conta
     {
-        // Definição dos atributos internos da Classe
+        // definição dos atributos internos da Classe
         private Int32 numero;
         private decimal limiteCredito;
         private decimal saldo;
         private DateTime dataAbertura;
         private decimal contadorConta = 0;
 
-        // Criação das propriedades da Classe referentes aos atributos internos
+        // criação dos modificadores dos atributos internos da Classe
         public Int32 Numero
         {
             get { return numero; }
@@ -41,7 +41,7 @@ namespace Banco
             set {  dataAbertura = value; }
         }
 
-        // Método construtor da classe Conta    
+        // método construtor da classe Conta    
 
         public Conta()
         {
@@ -51,7 +51,7 @@ namespace Banco
             DataAbertura = DateTime.Now;
         }
 
-        // Criação dos métodos da Classe
+        // criação dos métodos da Classe
         public decimal SaldoDisponivel => Saldo + LimiteCredito;
 
         public void Sacar(decimal valor)

@@ -54,3 +54,15 @@ C:\Users\henri\OneDrive\Documentos\Programacao\C#\Banco\Banco\obj\Debug\Banco.cs
 C:\Users\henri\OneDrive\Documentos\Programacao\C#\Banco\Banco\obj\Debug\Banco.csproj.CoreCompileInputs.cache
 C:\Users\henri\OneDrive\Documentos\Programacao\C#\Banco\Banco\obj\Debug\Banco.exe
 C:\Users\henri\OneDrive\Documentos\Programacao\C#\Banco\Banco\obj\Debug\Banco.pdb
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\bin\Debug\Banco.exe.config
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\bin\Debug\Banco.exe
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\bin\Debug\Banco.pdb
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.csproj.AssemblyReference.cache
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.frmMenu.resources
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.frmPix.resources
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.frmTransferencia.resources
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.Properties.Resources.resources
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.csproj.GenerateResource.cache
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.csproj.CoreCompileInputs.cache
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.exe
+C:\Users\ra2457076\Documents\programacao\aulas-cti\c-sharp\agosto\Versao com Pix\Banco\Banco\obj\Debug\Banco.pdb
